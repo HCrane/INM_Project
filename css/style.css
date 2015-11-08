@@ -1,5 +1,47 @@
 //CSS Template for INM Project
 
-body  {
-        background-color: black;
-      }
+body            {
+                  background-color: black;
+                }
+
+
+/*NAVIGATION AREA*/
+nav             {
+                  background:#D7D7D7;
+                  width:100%;
+                  text-align:center;
+                  text-decoration:none;
+                  margin:0em;
+                }
+
+nav a           {
+                  display:inline-block;
+                  height:2.188em;
+                  line-height:2.188em;
+                  padding-left: 1.875em;
+                  padding-right:1.875em;
+                  color: black;
+                  text-decoration:none;
+                }
+
+nav a:hover     {
+                  background-color:#f5f4f4;
+                  color:black;
+                }
+
+nav a:active    {
+                  background-color: #f5f4f4;
+                  color:black;
+                }
+/*FOOTER*/
+footer          {
+                  width:100%;
+                  line-height:2.188em;
+                  text-align:center;
+                  margin-top:5em;
+                  background-color:#D7D7D7;
+                }
+/*W3C*/
+footer img      {
+                  display:inline-block;
+                }
