@@ -4,6 +4,12 @@ body            {
                   background-color: black;
                 }
 
+#headerimage		{	
+				background-image:url(../img/header.png);
+				background-repeat: no-repeat;
+				background-position: left top;
+				height: 151px;
+				}
 
 /*NAVIGATION AREA*/
 nav             {
