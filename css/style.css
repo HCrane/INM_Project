@@ -4,11 +4,8 @@ body            {
                   background-color: black;
                 }
 
-#headerimage		{	
-				background-image:url(../img/header.png);
-				background-repeat: no-repeat;
-				background-position: left top;
-				height: 151px;
+header img		{
+				width: 100%	;
 				}
 
 /*NAVIGATION AREA*/
@@ -39,6 +36,11 @@ nav a:active    {
                   background-color: #f5f4f4;
                   color:black;
                 }
+				
+section table	{
+				border: 1px solid black;
+				width: 20em;
+				}
 /*FOOTER*/
 footer          {
                   width:100%;
