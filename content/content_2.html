@@ -20,8 +20,56 @@
 
 <!--CONTENT AREA--->
 <section>
-Ich bin eine Collection ;)
+<h1> Collections</h1>
+Whenever you need more than one object as a whole, you need a collection.
+You frequently handle a lot of objects together to:
+<ul>
+  <li>group, assemble, relate, order them in hierarchies</li>
+  <li>process them all at once (e.g. count, update, etc.)</li>
+  <li>store them in a database or files (read, write)</li>
+  <li>transmit them via network</li>
+</ul>  
+
+A collection (container in other programming languages e.g. C#) represents a group
+of objects, called members or elements with two relevant criteria:
+<dl>
+  <dt>uniqueness</dt>
+  <dd>- is each member unique within its collection, or are dublicates allowed</dd>
+  <dt>ordering</dt>
+  <dd>- are all members ordered within its collection at every time</dd>
+</dl> 
+With respect to these two criteria, it builds an architecture to represent and
+and process collection in an uniform way. It is based on:
+<dl>
+  <dt>interfaces</dt>
+	<dd>- to declare collections (ADTs)</dd>
+  <dt>implementations</dt>
+	<dd>- for all interfaces</dd>
+  <dt>algorithms</dt>
+	<dd>- in form of methods to process them ( insert, delete, search, sort,...)</dd>
+</dl> 
+
+<h2>Example: Set of Strings</h2>
+
+<pre><code>
+import java.util.*;
+public class SetOfStrings{
+
+	public static void main(String[] args) {
+		HashSet s = new HashSet();
+		s.add("Manfred");
+		s.add("Manfred");
+		s.add("Patrick");
+		s.add("Anna");
+		System.out.println(s);
+		System.out.println(new TreeSet(s));			
+	}
+}
+</code>
 </section>
+
+
+
 
 <!-- FOOTER & DISCLAIMER -->
 <footer>
