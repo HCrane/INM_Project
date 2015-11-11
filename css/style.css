@@ -1,12 +1,15 @@
-//CSS Template for INM Project
+// CSS Template for INM Project
+
+// Import Google Fonts
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,400italic,600&subset=latin,latin-ext);
 
 body            {
-                  background-color: black;
+                  font-family: 'Josefin Sans', sans-serif;
                 }
 
-header img		{
-				width: 100%	;
-				}
+header img	   	{
+				          width: 100%	;
+				        }
 
 /*NAVIGATION AREA*/
 nav             {
@@ -36,11 +39,30 @@ nav a:active    {
                   background-color: #f5f4f4;
                   color:black;
                 }
-				
-section table	{
-				border: 1px solid black;
-				width: 20em;
-				}
+
+section table	  {
+				          border: 1px solid black;
+				          width: 20em;
+				        }
+/*CONTENT SPECIFIC*/
+
+hr              {
+                  width:80%;
+                }
+/*
+div#text        {
+                  float:left;
+                }
+
+div#text        {
+                  float:right;
+                }
+
+div#clear        {
+                  float: clear;
+                }
+*/
+
 /*FOOTER*/
 footer          {
                   width:100%;
