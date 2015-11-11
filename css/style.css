@@ -49,19 +49,21 @@ section table	  {
 hr              {
                   width:80%;
                 }
-/*
-div#text        {
-                  float:left;
-                }
 
 div#text        {
+                  float:left;
+                  width: 50%;
+                }
+
+div#table       {
                   float:right;
+                  width: 50%;
                 }
 
 div#clear        {
-                  float: clear;
+                  clear:left;
                 }
-*/
+
 
 /*FOOTER*/
 footer          {

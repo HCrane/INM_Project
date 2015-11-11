@@ -21,6 +21,7 @@
 <!--CONTENT AREA-->
 <section>
 <h1> Collections</h1>
+<hr />
 Whenever you need more than one object as a whole, you need a collection.
 You frequently handle a lot of objects together to:
 <ul>
@@ -28,7 +29,7 @@ You frequently handle a lot of objects together to:
   <li>process them all at once (e.g. count, update, etc.)</li>
   <li>store them in a database or files (read, write)</li>
   <li>transmit them via network</li>
-</ul>  
+</ul>
 
 A collection (container in other programming languages e.g. C#) represents a group
 of objects, called members or elements with two relevant criteria:
@@ -37,7 +38,7 @@ of objects, called members or elements with two relevant criteria:
   <dd>- is each member unique within its collection, or are dublicates allowed</dd>
   <dt>ordering</dt>
   <dd>- are all members ordered within its collection at every time</dd>
-</dl> 
+</dl>
 With respect to these two criteria, it builds an architecture to represent and
 and process collection in an uniform way. It is based on:
 <dl>
@@ -47,7 +48,7 @@ and process collection in an uniform way. It is based on:
 	<dd>- for all interfaces</dd>
   <dt>algorithms</dt>
 	<dd>- in form of methods to process them ( insert, delete, search, sort,...)</dd>
-</dl> 
+</dl>
 
 <h2>Example: Set of Strings</h2>
 
@@ -62,7 +63,7 @@ public class SetOfStrings{
 		s.add("Patrick");
 		s.add("Anna");
 		System.out.println(s);
-		System.out.println(new TreeSet(s));			
+		System.out.println(new TreeSet(s));
 	}
 }
 </code></pre>
