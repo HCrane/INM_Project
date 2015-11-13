@@ -1,13 +1,5 @@
-// CSS Template for INM Project
+/* CSS Template for INM Project */
 
-body            {
-                  font-family: 'Josefin Sans', sans-serif;
-                  font-weight: 400;
-                }
-
-header img	   	{
-				          width: 100%	;
-				        }
 
 /*NAVIGATION AREA*/
 nav             {
@@ -70,8 +62,4 @@ footer          {
                   text-align:center;
                   margin-top:5em;
                   background-color:#D7D7D7;
-                }
-/*W3C*/
-footer img      {
-                  display:inline-block;
                 }
