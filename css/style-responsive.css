@@ -1,0 +1,197 @@
+/* CSS Template for INM Project */
+/*Support for WIDE*/
+@media only screen and (min-width: 60rem) {
+/*TODO NAV SECTION READINGS next to each other*/
+
+  header img        {
+                      width: 100%;
+                      height: auto;
+                    }
+
+  nav             {
+                    background:#D7D7D7;
+                    width:100%;
+                    text-align:center;
+                    text-decoration:none;
+                    margin:0em;
+                    float:left;
+                  }
+  nav a           {
+                    display:inline-block;
+                    height:2.188em;
+                    line-height:2.188em;
+                    padding-left: 1.875em;
+                    padding-right:1.875em;
+                    color: black;
+                    text-decoration:none;
+                  }
+
+  nav a:hover     {
+                    background-color:#f5f4f4;
+                    color:black;
+                  }
+
+  nav a:active    {
+                    background-color: #f5f4f4;
+                    color:black;
+                  }
+
+  section table	  {
+                    border: 0.0625em solid black;
+                    width: 20em;
+                  }
+  /*CONTENT SPECIFIC*/
+
+  hr              {
+                    width:80%;
+                  }
+
+#text        {
+                  float:left;
+                  width: 50%;
+                }
+
+#table       {
+                  float:right;
+                  width: 50%;
+                }
+
+#clear        {
+                  clear:left;
+                }
+
+  /*FOOTER*/
+  footer          {
+                    width:100%;
+                    line-height:2.188em;
+                    text-align:center;
+                    margin-top:5em;
+                    background-color:#D7D7D7;
+                  }
+
+}
+
+/*Support for MEDIUM*/
+@media only screen and (min-width: 40rem) and (max-width: 60rem) {
+/*TODO NAV SECTION READINGS next to each other*/
+
+  header img        {
+                      width: 100%;
+                      height: auto;
+                    }
+
+  nav             {
+                    background:#D7D7D7;
+                    width:100%;
+                    text-align:center;
+                    text-decoration:none;
+                    margin:0em;
+                    float:left;
+                  }
+
+  nav a           {
+                    display:inline-block;
+                    height:2.188em;
+                    line-height:2.188em;
+                    padding-left: 1.875em;
+                    padding-right:1.875em;
+                    color: black;
+                    text-decoration:none;
+                  }
+
+  nav a:hover     {
+                    background-color:#f5f4f4;
+                    color:black;
+                  }
+
+  nav a:active    {
+                    background-color: #f5f4f4;
+                    color:black;
+                  }
+
+  section         {
+                    background-color: white;
+                    float:right;
+                  }
+
+  section table	  {
+                    border: 0.0625em solid black;
+                    width: 20em;
+                  }
+  /*CONTENT SPECIFIC*/
+
+  hr              {
+                    width:80%;
+                  }
+
+ /*Deleted div for table for better oversight*/
+
+  /*FOOTER*/
+  footer          {
+                    width:100%;
+                    line-height:2.188em;
+                    text-align:center;
+                    margin-top:5em;
+                    background-color:#D7D7D7;
+                  }
+
+}
+
+/*Support for NARROW*/
+@media only all and (max-width: 40rem) {
+header img        {
+                    width: 100%;
+                    height: auto;
+                  }
+
+  nav             {
+                    background:#D7D7D7;
+                    width:100%;
+                    text-align:center;
+                    text-decoration:none;
+                    margin:0em;
+                  }
+
+  nav a           {
+                    display:inline-block;
+                    height:2.188em;
+                    line-height:2.188em;
+                    width: 100%;
+                    color: black;
+                    text-decoration:none;
+                  }
+
+  nav a:hover     {
+                    background-color:#f5f4f4;
+                    color:black;
+                  }
+
+  nav a:active    {
+                    background-color: #f5f4f4;
+                    color:black;
+                  }
+
+  section table	  {
+                    border: 0.0625em solid black;
+                    width: 100%;
+                  }
+  /*CONTENT SPECIFIC*/
+
+  hr              {
+                    width:80%;
+                  }
+
+ /*Deleted div for table for better oversight*/
+
+  /*FOOTER*/
+  footer          {
+                    width:100%;
+                    line-height:2.188em;
+                    text-align:center;
+                    margin-top:5em;
+                    background-color:#D7D7D7;
+                  }
+
+}
+
+/*NAVIGATION AREA*/

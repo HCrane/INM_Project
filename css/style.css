@@ -40,17 +40,17 @@ hr              {
                   width:80%;
                 }
 
-div#text        {
+#text        {
                   float:left;
                   width: 50%;
                 }
 
-div#table       {
+#table       {
                   float:right;
                   width: 50%;
                 }
 
-div#clear        {
+#clear        {
                   clear:left;
                 }
 
