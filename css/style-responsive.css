@@ -10,22 +10,32 @@
 
   nav             {
                     background:#D7D7D7;
-                    width:100%;
-                    text-align:center;
+                    width:15%;
                     text-decoration:none;
-                    margin:0em;
+                    margin-right: 3%;
+                    margin-top: 3em;
                     float:left;
-                  }
-  nav a           {
-                    display:inline-block;
-                    height:2.188em;
-                    line-height:2.188em;
-                    padding-left: 1.875em;
-                    padding-right:1.875em;
-                    color: black;
-                    text-decoration:none;
+                    display: block;
                   }
 
+  nav ul          {
+                    text-decoration: none;
+                    list-style: none;
+
+                  }
+  nav ul a {
+    display: block;
+  }
+  nav ul li       {
+                    margin-top: 1em;
+                    position: relative;
+                  }
+  nav ul ul {
+         display:none;
+          }
+ nav ul li:hover > ul {
+  display: block;
+}
   nav a:hover     {
                     background-color:#f5f4f4;
                     color:black;
@@ -35,35 +45,48 @@
                     background-color: #f5f4f4;
                     color:black;
                   }
+  section         {
+                    width:48%;
+                    display:inline-block;
+                    margin-right: 3%;
 
+                  }
   section table	  {
                     border: 0.0625em solid black;
                     width: 20em;
+                    margin-left: 2%;
+                  }
+
+  aside           {
+                    float:right;
+                    width:30%;
+                    margin-top: 3em;
+
                   }
   /*CONTENT SPECIFIC*/
 
   hr              {
                     width:80%;
                   }
-				  
-				  
+
+
 #welcomeMessage   {
                     display: inline-block;
-					position: fixed;
-					top: 0;
-					bottom: 0;
-					left: 0;
-					right: 0;
-					width: 300px;
-					height: 100px;
-					margin: auto;
-					text-align: center;
-					vertical-align: middle;
-					background-color: rgb(192,192,192);
-					
-					/*FADE IN*/
-					animation: fadein 7s;
-                  }		  
+                    position: fixed;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    width: 300px;
+                    height: 100px;
+                    margin: auto;
+                    text-align: center;
+                    vertical-align: middle;
+                    background-color: rgb(192,192,192);
+
+                    /*FADE IN*/
+                    animation: fadein 7s;
+                  }
 
 #text        {
                   float:left;
@@ -72,7 +95,7 @@
 
 #table       {
                   float:right;
-                  width: 50%;
+                  width: 49%;
                 }
 
 #clear        {
@@ -101,8 +124,7 @@
 
   nav             {
                     background:#D7D7D7;
-                    width:100%;
-                    text-align:center;
+                    width:15%;
                     text-decoration:none;
                     margin:0em;
                     float:left;
@@ -110,10 +132,6 @@
 
   nav a           {
                     display:inline-block;
-                    height:2.188em;
-                    line-height:2.188em;
-                    padding-left: 1.875em;
-                    padding-right:1.875em;
                     color: black;
                     text-decoration:none;
                   }
@@ -137,13 +155,15 @@
                     border: 0.0625em solid black;
                     width: 20em;
                   }
+  aside           {
+                    width:100%;
+                  }
   /*CONTENT SPECIFIC*/
 
   hr              {
                     width:80%;
                   }
 
- /*Deleted div for table for better oversight*/
 
   /*FOOTER*/
   footer          {

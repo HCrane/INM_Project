@@ -13,70 +13,95 @@
 
 <!-- NAVIGATION AREA -->
 <nav>
-  <a href="../index.html" title="Introduction to Java">Java</a>
-  <a href="content_1.html" title="Platform Indipendance">Platform Independence</a>
-  <a href="content_2.html" title="Collections">Collections</a>
-  <a href="content_3.html" title="TOPIC 3">TOPIC 3</a>
-  <a href="content_4.html" title="TOPIC 4">TOPIC 4</a>
-  <a href="source.html" title="Sources">Source</a>
+  <ul>
+    <li>
+    <a href="../index.html" title="Introduction to Java">Java</a></li>
+    <li><a href="content_1.html" title="Platform Indipendance">Platform Independence</a></li>
+    <li><a href="content_2.html" title="Collections">Collections</a></li>
+    <li><a href="content_3.html" title="TOPIC 3">TOPIC 3</a></li>
+    <li><a href="content_4.html" title="TOPIC 4">TOPIC 4</a></li>
+    <li><a href="source.html" title="Sources">Source</a></li>
+  </ul>
 </nav>
 
 <!--CONTENT AREA-->
 <section>
-<h1> Collections</h1>
-<hr />
-Whenever you need more than one object as a whole, you need a collection.
-You frequently handle a lot of objects together to:
-<ul>
-  <li>group, assemble, relate, order them in hierarchies</li>
-  <li>process them all at once (e.g. count, update, etc.)</li>
-  <li>store them in a database or files (read, write)</li>
-  <li>transmit them via network</li>
-</ul>
+  <h1> Collections</h1>
+  <hr />
+  Whenever you need more than one object as a whole, you need a collection.
+  You frequently handle a lot of objects together to:
+  <ul>
+    <li>group, assemble, relate, order them in hierarchies</li>
+    <li>process them all at once (e.g. count, update, etc.)</li>
+    <li>store them in a database or files (read, write)</li>
+    <li>transmit them via network</li>
+  </ul>
 
-A collection (container in other programming languages e.g. C#) represents a group
-of objects, called members or elements with two relevant criteria:
-<dl>
-  <dt>uniqueness</dt>
-  <dd>- is each member unique within its collection, or are dublicates allowed</dd>
-  <dt>ordering</dt>
-  <dd>- are all members ordered within its collection at every time</dd>
-</dl>
-With respect to these two criteria, it builds an architecture to represent and
-and process collection in an uniform way. It is based on:
-<dl>
-  <dt>interfaces</dt>
-	<dd>- to declare collections (ADTs)</dd>
-  <dt>implementations</dt>
-	<dd>- for all interfaces</dd>
-  <dt>algorithms</dt>
-	<dd>- in form of methods to process them ( insert, delete, search, sort,...)</dd>
-</dl>
+  A collection (container in other programming languages e.g. C#) represents a group
+  of objects, called members or elements with two relevant criteria:
+  <dl>
+    <dt>uniqueness</dt>
+    <dd>- is each member unique within its collection, or are dublicates allowed</dd>
+    <dt>ordering</dt>
+    <dd>- are all members ordered within its collection at every time</dd>
+  </dl>
+  With respect to these two criteria, it builds an architecture to represent and
+  and process collection in an uniform way. It is based on:
+  <dl>
+    <dt>interfaces</dt>
+  	<dd>- to declare collections (ADTs)</dd>
+    <dt>implementations</dt>
+  	<dd>- for all interfaces</dd>
+    <dt>algorithms</dt>
+  	<dd>- in form of methods to process them ( insert, delete, search, sort,...)</dd>
+  </dl>
 
-<h2>Example: Set of Strings</h2>
+  <h2>Example: Set of Strings</h2>
 
-<pre><code>
-import java.util.*;
-public class SetOfStrings{
+  <pre><code>
+  import java.util.*;
+  public class SetOfStrings{
 
-	public static void main(String[] args) {
-		HashSet s = new HashSet();
-		s.add("Manfred");
-		s.add("Manfred");
-		s.add("Patrick");
-		s.add("Anna");
-		System.out.println(s);
-		System.out.println(new TreeSet(s));
-	}
-}
-</code></pre>
+  	public static void main(String[] args) {
+  		HashSet s = new HashSet();
+  		s.add("Manfred");
+  		s.add("Manfred");
+  		s.add("Patrick");
+  		s.add("Anna");
+  		System.out.println(s);
+  		System.out.println(new TreeSet(s));
+  	}
+  }
+  </code></pre>
 
-<h2>Summary:</h2>
-A collection is an object that can hold references to other objects. <p>
-The collection interfaces declare the operations that can be performed on each type of collection.<p>
+  <h2>Summary:</h2>
+  A collection is an object that can hold references to other objects. <p>
+  The collection interfaces declare the operations that can be performed on each type of collection.<p>
 </section>
 
+<!-- FURTHER READING -->
+<aside>
+  <div id="currentTime">
+    <p>
+    <noscript>You have to enable JavaScript to see the current time!</noscript>
+    </p>
+  </div>
+  <div>
+    <p>
+      This website has been evaluated with <a href="http://jigsaw.w3.org/css-validator/">
+        <img src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" /></a>
+    </p>
+  </div>
+  <div id="multiply">
+    <button type="button" id="multiplyButton" onclick="display(4);">Multiply 4 numbers</button>
+    <br>
+    <br>
+    <form id=multiplyForm>
 
+    </form>
+  </div>
+</aside>
 
 
 <!-- FOOTER & DISCLAIMER -->

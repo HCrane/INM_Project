@@ -8,100 +8,117 @@
 	<script type="text/javascript" src="js/javascript.js"></script>
 </head>
 <body onload="showCurrentTime();" >
+  <!-- HEADER AREA  -->
+  <header>
+    <img src="img/header.png" alt="Headerimage">
+  </header>
 
-<div id="welcomeMessage">
-	<h3>welcome to group_7 website</h3> 
-	<button type="button" id="closeMessage" onclick="closeWelcomeMessage()">Close</button>
-</div>
+  <!-- Welcome Message -->
+  <div id="welcomeMessage">
+  	<h3>welcome to group_7 website</h3>
+  	<button type="button" id="closeMessage" onclick="closeWelcomeMessage()">Close</button>
+  </div>
 
-<!-- HEADER AREA  -->
-<header>
-  <img src="img/header.png" alt="Headerimage">
-</header>
+  <!-- NAVIGATION AREA -->
+  <nav>
+    <ul>
+      <li><a href="index.html" title="Introduction to Java">Java</a></li>
+      <li><a href="content/content_1.html" title="Platform Indipendance">Platform Independence</a></li>
+      <ul>
+        <li><a href="content/content_1.html#indipendance">Platform Indipendance</a></li>
+        <li><a href="content/content_1.html#how">How?</a> </li>
+        <li><a href="content/content_1.html#virtual">Java Virtual</a></li>
+      </ul>
+      <li><a href="content/content_2.html" title="Collections">Collections</a></li>
+      <ul>
+        <li></li>
+      </ul>
+      <li><a href="content/content_3.html" title="TOPIC 3">TOPIC 3</a></li>
+      <ul>
+        <li></li>
+      </ul>
+      <li><a href="content/content_4.html" title="TOPIC 4">TOPIC 4</a></li>
+      <ul>
+        <li></li>
+      </ul>
+      <li><a href="content/source.html" title="Sources">Source</a></li>
+    </ul>
+  </nav>
 
-<!-- NAVIGATION AREA -->
-<nav>
-  <a href="index.html" title="Introduction to Java">Java</a>
-  <a href="content/content_1.html" title="Platform Indipendance">Platform Independence</a>
-  <a href="content/content_2.html" title="Collections">Collections</a>
-  <a href="content/content_3.html" title="TOPIC 3">TOPIC 3</a>
-  <a href="content/content_4.html" title="TOPIC 4">TOPIC 4</a>
-  <a href="content/source.html" title="Sources">Source</a>
-</nav>
+  <!--CONTENT AREA-->
+  <section>
+  	<h1> Introduction to Java </h1>
+    <hr />
+    <div id="text">
+      <h2> What is Java? </h2>
+        <p> Java is an object-orientated programming language. It is one of the most popular coding languages. In the past few years, Java was very often on the first or second place in the ranking of the most popular programming languages. Java is a registered label of Sun Microsystems (belongs to Oracle since 2010). Java was first released in 1995.<br> <br> The biggest advantage of Java is its platform independence, which allows it to run on a huge range of devices. Typically Java doesn't run directly on hardware. There is a virtual machine, which processes the code. So mostly Java doesn't run directly on the hardware but trough software on the target platform. It allows developers to create applets and applications. Java is also being used in cars and many electronic devices.   <br> <br>
+          Java has a similar syntax to C and C++, but compared to other programming languages, Java is easy to learn and use. <br> <br>
+          Click <a href="http://www.oracle.com/technetwork/java/index.html" target="_blank">here</a> to get to the homepage for Java. <br>
+          Right next this text, there is a list of the big advantages and disadvantages of Java.
+        </p>
+    </div>
+    <div id="table">
+      <table>
+        <caption>
+        </caption>
+        <tr>
+          <th scope="col">Advantages</th>
+          <th scope="col">Disadvatages</th>
+        </tr>
+        <tr>
+          <td>platform independence</td>
+          <td>slower than some other languages</td>
+        </tr>
+        <tr>
+          <td>type safety</td>
+          <td>not many options to manage storage</td>
+        </tr>
+        <tr>
+          <td>exception handling</td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td>multi threading</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>expandable and scalable</td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+    <div id="clear">
+    </div>
+  </section>
 
-<!--CONTENT AREA-->
-<section>
-	<h1> Introduction to Java </h1>
-  <hr />
-<div id="text">
-  <h2> What is Java? </h2>
-    <p>Java is an object-orientated programming language. It is one of the most popular coding languages. In the past few years, Java was very often on the first or second place in the ranking of the most popular programming languages. Java is a registered label of Sun Microsystems (belongs to Oracle since 2010). Java was first released in 1995.<br> <br> The biggest advantage of Java is its platform independence, which allows it to run on a huge range of devices. Typically Java doesn't run directly on hardware. There is a virtual machine, which processes the code. So mostly Java doesn't run directly on the hardware but trough software on the target platform. It allows developers to create applets and applications. Java is also being used in cars and many electronic devices. <br> <br>
-    Java has a similar syntax to C and C++, but compared to other programming languages, Java is easy to learn and use. <br> <br>
-    Click <a href="http://www.oracle.com/technetwork/java/index.html" target="_blank">here</a> to get to the homepage for Java. <br>
-    Right next this text, there is a list of the big advantages and disadvantages of Java.
+  <!-- FURTHER READINGS -->
+  <aside>
+    <div id="currentTime">
+      <p>
+      <noscript>You have to enable JavaScript to see the current time!</noscript>
+      </p>
+    </div>
+    <div>
+      <p>
+        This website has been evaluated with <a href="http://jigsaw.w3.org/css-validator/">
+          <img src="http://jigsaw.w3.org/css-validator/images/vcss"
+              alt="Valid CSS!" /></a>
+      </p>
+    </div>
+    <div id="multiply">
+      <button type="button" id="multiplyButton" onclick="display(4);">Multiply 4 numbers</button>
+      <br>
+      <br>
+      <form id=multiplyForm>
+
+      </form>
+    </div>
+  </aside>
+  <!-- FOOTER & DISCLAIMER -->
+  <footer>
+    <p>
+      &#169; by M. Böck <b>&#38;</b> R. Czerny <b>&#38;</b> A.Haupt <b>&#38;</b> E. Moser | 2015
     </p>
-</div>
-<div id="table">
-<table>
-  <caption>
-  </caption>
-  <tr>
-    <th scope="col">Advantages</th>
-    <th scope="col">Disadvatages</th>
-  </tr>
-  <tr>
-    <td>platform independence</td>
-    <td>slower than some other languages</td>
-  </tr>
-  <tr>
-    <td>type safety</td>
-    <td>not many options to manage storage</td>
-  </tr>
-  <tr>
-    <td>exception handling</td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <td>multi threading</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>expandable and scalable</td>
-    <td></td>
-  </tr>
-</table>
-</div>
-<div id="clear">
-</div>
-
-<div>
-	<p id="currentTime">
-		<noscript>You have to enable JavaScript to see the current time!</noscript>
-	</p> 
-</div>
-
-<button type="button" id="multiplyButton" onclick="display(4);">Multiply 4 numbers</button>
-<br>
-<br>
-<form id=multiplyForm>
-
-</form> 
-
-<p>
-  This website has been evaluated with <a href="http://jigsaw.w3.org/css-validator/">
-    <img src="http://jigsaw.w3.org/css-validator/images/vcss"
-        alt="Valid CSS!" />
-</a>
-</p>
-</section>
-
-<!-- FOOTER & DISCLAIMER -->
-<footer>
-<p>
-  &#169; by M. Böck <b>&#38;</b> R. Czerny <b>&#38;</b> A.Haupt <b>&#38;</b> E. Moser | 2015
-</p>
-
-</footer>
-
+  </footer>
 </body>
 </html>
