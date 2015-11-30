@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Collections</title>
+    <title>Basic Datatypes</title>
     <link href="../css/style-responsive.css" type="text/css" rel="stylesheet">
 </head>
 <body>
@@ -14,20 +14,84 @@
 <!-- NAVIGATION AREA -->
 <nav>
   <ul>
-    <li>
-    <a href="../index.html" title="Introduction to Java">Java</a></li>
-    <li><a href="content_1.html" title="Platform Indipendance">Platform Independence</a></li>
-    <li><a href="content_2.html" title="Collections">Collections</a></li>
-    <li><a href="content_3.html" title="TOPIC 3">TOPIC 3</a></li>
-    <li><a href="content_4.html" title="TOPIC 4">TOPIC 4</a></li>
-    <li><a href="content_5.html" title="Multithreading">Multithreading</a></li>
-    <li><a href="source.html" title="Sources">Source</a></li>
-  </ul>
-</nav>
+  <li><a href="../index.html" title="Introduction to Java">Java</a></li>
+  <li><a href="content_1.html" title="Platform Indipendance">Platform Independence</a></li>
+  <li><a href="content_2.html" title="Collections">Collections</a></li>
+  <li><a href="content_3.html" title="Facelets">Facelets</a></li>
+  <li><a href="content_4.html" title="Basic Datatypes">Basic Datatypes</a></li>
+  <li><a href="content_5.html" title="Multithreading">Multithreading</a></li>
+  <li><a href="source.html" title="Sources">Source</a></li>
+</ul></nav>
 
 <!--CONTENT AREA-->
 <section>
+<h1>Basic Datatypes</h1>
+<p>
+Variables are reserved memory locations to store values. When you create a variable you reserve some space in memory. <br>
+Based on the data type of a variable, the operating system allocates memory and decides what can be stored in the reserved memory.
+Therefore, by assigning different data types to variables, you can store integers, decimals, or characters in these variables.
 
+There are 2 different data types in Java:
+<ul>
+	<li>Object Data Types</li>
+	<li>Primitiv Data Types</li>
+</ul>
+
+<h2>Primitiv Data Types</h2>
+
+There are 8 different kinds of Primitive Data Types.
+They are predefined by the language and named by the keyword. 
+
+<dl>
+  <dt>byte</dt>
+	<dd>- 8-bit signet two's complement integer</dd>
+	<dd>- minimum value: -2^7</dd>
+	<dd>- maximum value: 2^7-1</dd>
+	<dd>- default value: 0</dd>
+	<dd>- Byte data type is used to save space in large arrays, mainly in place of integers, 
+			since a byte is four times smaller than an int.</dd>
+  <dt>short</dt>
+	<dd>- 16-bit signet two's complement integer</dd>
+	<dd>- minimum value: -2^15</dd>
+	<dd>- maximum value: 2^15-1</dd>
+	<dd>- default value: 0</dd>
+	<dd>- Short data type can also be used to save memory as byte data type. 
+		A short is 2 times smaller than an int</dd>
+	<dt>int</dt>
+		<dd>- 32-bit signed two's complement integer</dd>
+		<dd>- minimum value: -2^31</dd>
+		<dd>- maximum value: 2^31-1</dd>
+		<dd>- default value: 0</dd>
+		<dd>Int is generally used as the default data type for integral values unless there is a concern about memory.</dd>
+	<dt>long</dt>
+		<dd>- 64-bit signed two's complement integer<dd>
+		<dd>- minimum value: -2^63<dd>
+		<dd>- maximum value: 2^63-1<dd>
+		<dd>- default value: 0L<dd>
+		<dd>- Long is used, when an int is to short and you need a wider range<dd>
+		
+	<dt>float</dt>
+		<dd>- single-precision 32-bit IEEE 754 floating point<dd>
+		<dd>- used to save memory in large arrays of floating point numbers<dd>
+		<dd>- float data types is never used for precise values<dd>
+		<dd>- default value: 0.0f<dd>
+	<dt>double</dt>
+		<dd>- double-precision 64-bit IEEE 754 floating point</dd>
+		<dd>- default value: 0.0d</dd>
+		<dd>- usually used as default value for decimal values</dd>
+	<dt></dt>
+		<dd>- one bit of information</dd>
+		<dd>- values: true or false</dd>
+		<dd>- default value: false</dd>
+		
+	<dt>char</dt>
+		<dd>- single 16-bit unicode character</dd>
+		<dd>- minimum value: 0</dd>
+		<dd>- maximum value: 65,535</dd>
+		<dd>- used to store any charecter</dd>
+		
+</dl>
+</p>
 </section>
 
 <!-- FURTHER READING -->
