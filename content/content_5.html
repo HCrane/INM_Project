@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Collections</title>
+    <link href="../css/style-responsive.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<!--HEADER AREA -->
+<header>
+  <img src="../img/header.png" alt="Headerimage">
+</header>
+
+<!-- NAVIGATION AREA -->
+<nav>
+  <ul>
+    <li>
+    <a href="../index.html" title="Introduction to Java">Java</a></li>
+    <li><a href="content_1.html" title="Platform Indipendance">Platform Independence</a></li>
+    <li><a href="content_2.html" title="Collections">Collections</a></li>
+    <li><a href="content_3.html" title="TOPIC 3">TOPIC 3</a></li>
+    <li><a href="content_4.html" title="TOPIC 4">TOPIC 4</a></li>
+    <li><a href="content_5.html" title="Multithreading">Multithreading</a></li>
+    <li><a href="source.html" title="Sources">Source</a></li>
+  </ul>
+</nav>
+
+<!--CONTENT AREA-->
+<section>
+<h1>Multithreading</h1>
+<h2>What is a thread?</h2>
+<p>
+A thread is a path for an execution of a programm. The programm is organized to run a multiple number of threads parallel. The big advance is, that a programm is not interrupted, when it gets for example information from another source. It is not to be mistaken with multitasking, where several applications run side by side. The big difference is, that multithreading allows you to run multiple parts of one programm run side by side.
+</p>
+<h2>Fields of application</h2>
+<ul>
+	<li>Internet applications</li>
+	<ul>
+		<li>Image Buildup</li>
+		<li>Queries</li>
+		</ul>
+	<li>Server applications</li>
+		<ul>
+		<li>Several clients parallel</li>
+		</ul>
+</ul>
+<h2>Usage of multithreading with Java</h2>
+<p>
+Java supports multithreading. It offers predefined classes, which can be used by the programmer to create and change threads. There are two ways to create threads in Java.
+<ul>
+	<li>It is possible to implement a class which derives from a predefined class "Thread".</li>
+	<li>If you want to create a thread of a class, which already derives from a class you have to use another way, because Java doesn't support multiple inheritance. Therefor exists the possibility to implement the "runnable"-Interface. 
+</ul>
+
+These are the most important ways to controll a thread:
+<ul>
+	<li>Start a thread</li>
+		<ul>
+        <li>After a thread was created, it has to be starte with the method "start()" of the class "Thread". For example with: nameofthread.start().</li>
+		</ul>
+    <li>Pause a thread</li>
+   	 	<ul>
+        <li>To pause a thread you unfortunately can't use a command like "nameofthread.stop()". Therefor you have to look at your run()-method. If this method comes to its end, the thread will stop.</li>
+		</ul>
+</ul>
+</p>
+</section>
+
+<!-- FURTHER READING -->
+<aside>
+  <div id="currentTime">
+    <p>
+    <noscript>You have to enable JavaScript to see the current time!</noscript>
+    </p>
+  </div>
+  <div>
+    <p>
+      This website has been evaluated with <a href="http://jigsaw.w3.org/css-validator/">
+        <img src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" /></a>
+    </p>
+  </div>
+  <div id="multiply">
+    <button type="button" id="multiplyButton" onclick="display(4);">Multiply 4 numbers</button>
+    <br>
+    <br>
+    <form id=multiplyForm>
+
+    </form>
+  </div>
+</aside>
+
+<!-- FOOTER & DISCLAIMER -->
+<footer>
+&#169; by M. Böck <b>&#38;</b> R. Czerny <b>&#38;</b> A.Haupt <b>&#38;</b> E. Moser | 2015
+</footer>
+
+</body>
+</html>
