@@ -132,33 +132,51 @@ nav ul li ul li a:hover{
                       height: auto;
                     }
 
-  nav             {
-                    background:#D7D7D7;
-                    width:15%;
-                    text-decoration:none;
-                    margin:0em;
-                    float:left;
-                  }
-
-nav ul            {
-  list-style: none;
+  nav {
+    width: 20%; /*use the complete width */
+    margin-right: 3%;
+    margin-top: 3em;
+    float:left;
+    display: block;
 }
+nav ul {
+    padding: 0px; /*optics */
+    margin: 0px;  /*optics */
+}
+    nav ul,nav ul li{
+    background-color: #FAFAFA; /*background color */
+}
+    nav ul li {
+    list-style: none; /*no bullets in the list */
+    float:left; /*horizontal layout */
+	width:100%;
+}
+nav ul li a {
+    text-decoration: none; /*links shouldn't be underlined */
+    display: block; /*no inlie */
+    color: #000; /*text color */
+    padding: 1em 1em 1em 5em; /*optics */
+}
+nav ul li:hover > ul {
+    visibility: visible; /*show selected list */
+    background:#39F; /*highlight selected list */
 
-  nav a           {
-                    display:inline-block;
-                    color: black;
-                    text-decoration:none;
-                  }
+}
+nav ul li ul{
+    display: inline; /*hide subtopics */
+    visibility: hidden; /*hide subtopics */
+    position: absolute;
+}
+nav ul li ul li{
+    float: none;
+}
+nav ul li ul li a:hover{
+    color: #000;
+  }
+  nav ul li:hover > a {
+    background-color:#39F;
+  }
 
-  nav a:hover     {
-                    background-color:#f5f4f4;
-                    color:black;
-                  }
-
-  nav a:active    {
-                    background-color: #f5f4f4;
-                    color:black;
-                  }
 
   section         {
                     background-color: white;
@@ -198,35 +216,51 @@ header img        {
                     height: auto;
                   }
 
-  nav             {
-                    background:#D7D7D7;
-                    width:100%;
-                    text-align:center;
-                    text-decoration:none;
-                    margin:0em;
-                  }
-                  nav ul            {
-                    list-style: none;
-                  }
+  nav {
+    width: 100%; /*use the complete width */
+    margin-right: 0%;
+    margin-top: 0em;
+    float:left;
+    display: block;
+}
+nav ul {
+    padding: 0px; /*optics */
+    margin: 0px;  /*optics */
+}
+    nav ul,nav ul li{
+    background-color: #FAFAFA; /*background color */
+}
+    nav ul li {
+    list-style: none; /*no bullets in the list */
+    float:left; /*horizontal layout */
+	width:100%;
+}
+nav ul li a {
+    text-decoration: none; /*links shouldn't be underlined */
+    display: block; /*no inlie */
+    color: #000; /*text color */
+    padding: 1em 1em 1em 5em; /*optics */
+}
+nav ul li:hover > ul {
+    visibility: visible; /*show selected list */
+    background:#39F; /*highlight selected list */
 
-  nav a           {
-                    display:inline-block;
-                    height:2.188em;
-                    line-height:2.188em;
-                    width: 100%;
-                    color: black;
-                    text-decoration:none;
-                  }
+}
+nav ul li ul{
+    display: inline; /*hide subtopics */
+    visibility: hidden; /*hide subtopics */
+    position: absolute;
+}
+nav ul li ul li{
+    float: none;
+}
+nav ul li ul li a:hover{
+    color: #000;
+  }
+  nav ul li:hover > a {
+    background-color:#39F;
+  }
 
-  nav a:hover     {
-                    background-color:#f5f4f4;
-                    color:black;
-                  }
-
-  nav a:active    {
-                    background-color: #f5f4f4;
-                    color:black;
-                  }
 
   section table	  {
                     border: 0.0625em solid black;
