@@ -138,6 +138,7 @@ nav ul li ul li a:hover{
     margin-top: 3em;
     float:left;
     display: block;
+    list-style: none;
 }
 nav ul {
     padding: 0px; /*optics */
