@@ -32,55 +32,51 @@
 <!--CONTENT AREA-->
 <section>
 
-<h1>Facelets and Expression Language</h1>
+  <h1>Facelets and Expression Language</h1>
 
-<p>Java Server Faces are based on Facelets and their Expression Language. <br>
-In short, the use of Facelets reduces time and effort that had to be planned for development and deployment.
-</p>
+  <p>Java Server Faces are based on Facelets and their Expression Language. <br>
+  In short, the use of Facelets reduces time and effort that had to be planned for development and deployment.
+  </p>
 
-<h2>Facelets</h2>
-<p>A Facelet defines the content of a web page,
-for their Web applications. With Facelets, it is possible to combine content from XHTML documents and build componenttrees.
-In JSF 2.0 Facelets take the place of JSP.
-Facelets are faster by 10-15% compared to JSP in building a page.
-Problems with the combination of components and standard HTML content were also eliminated in Facelets.
-The code reuse is ensured by the support of templates and Composite Components. Functional expandability of components and other server-side objects by adapting.
-Another advantage of Facelets against JSP is the (at least partially) support the JSTL. (JavaServer Pages Standard Tag Library).
-With the special JSFC attribute the Facelets-compiler can convert any XML elements in components.
-Here is a code fragment:
-</p>
+  <h2>Facelets</h2>
+  <p>A Facelet defines the content of a web page,
+  for their Web applications. With Facelets, it is possible to combine content from XHTML documents and build componenttrees.
+  In JSF 2.0 Facelets take the place of JSP.
+  Facelets are faster by 10-15% compared to JSP in building a page.
+  Problems with the combination of components and standard HTML content were also eliminated in Facelets.
+  The code reuse is ensured by the support of templates and Composite Components. Functional expandability of components and other server-side objects by adapting.
+  Another advantage of Facelets against JSP is the (at least partially) support the JSTL. (JavaServer Pages Standard Tag Library).
+  With the special JSFC attribute the Facelets-compiler can convert any XML elements in components.
+  Here is a code fragment:
+  </p>
 
-<pre><code>
-&lt;input id="firstName" jsfc="h:inputText"
-    value="#{customer.firstName}"/&gt;
-</pre></code>
-<p>A disadvantage of Facelet is, that the markup independence of JSF gets lost and alternative renderer perhaps can no longer be used.
-</p>
+  <pre><code>
+  &lt;input id="firstName" jsfc="h:inputText"
+      value="#{customer.firstName}"/&gt;
+  </code></pre>
+  <p>A disadvantage of Facelet is, that the markup independence of JSF gets lost and alternative renderer perhaps can no longer be used.
+  </p>
 
-<h3>LifeCycle</h3>
-<p>The Lifecycle of a Facelet consists of 6 Phases and is displayed in the next Image: </p>
+  <h3>LifeCycle</h3>
+  <p>The Lifecycle of a Facelet consists of 6 Phases and is displayed in the next Image: </p>
 
-<img src="../img/lifecycle.png" alt="LifeCycle">
+  <img src="../img/lifecycle.png" alt="LifeCycle">
 
 
 
-<h2>Expression Language</h2>
+  <h2>Expression Language</h2>
 
-<p>The Expression Language is primarily suitable to access beans in the scopes of a JSP. In addition, simple mathematical operations and Boolean expressions are possible, the used in connection with branching.
-Expression Language expressions are identified by special delimiters. They begin either with "$ {" or "# {" and ends with "}" $ {expression} or # {expression}
-In summary, EL provides the ability to use simple expressions to perform the following tasks.
-</p>
-<ul>
-  <li>dynamic reading of data in Java Bean components or data structures or of implicit objects.</li>
-  <li>dynamic writing in Java Bean components</li>
-  <li>calling any static- or public methods</li>
-  <li>running dynamic arithmetic operations</li>
+  <p>The Expression Language is primarily suitable to access beans in the scopes of a JSP. In addition, simple mathematical operations and Boolean expressions are possible, the used in connection with branching.
+  Expression Language expressions are identified by special delimiters. They begin either with "$ {" or "# {" and ends with "}" $ {expression} or # {expression}
+  In summary, EL provides the ability to use simple expressions to perform the following tasks.
+  </p>
+  <ul>
+    <li>dynamic reading of data in Java Bean components or data structures or of implicit objects.</li>
+    <li>dynamic writing in Java Bean components</li>
+    <li>calling any static- or public methods</li>
+    <li>running dynamic arithmetic operations</li>
+  </ul>
 </section>
-
-<!-- FOOTER & DISCLAIMER -->
-<footer>
-&#169; by M. Böck <b>&#38;</b> R. Czerny <b>&#38;</b> A.Haupt <b>&#38;</b> E. Moser | 2015
-</footer>
 
 <!-- FURTHER READING -->
 <aside>
@@ -97,6 +93,13 @@ In summary, EL provides the ability to use simple expressions to perform the fol
     </p>
   </div>
 </aside>
+
+<!-- FOOTER & DISCLAIMER -->
+<footer>
+&#169; by M. Böck <b>&#38;</b> R. Czerny <b>&#38;</b> A.Haupt <b>&#38;</b> E. Moser | 2015
+</footer>
+
+
 
 </body>
 </html>
