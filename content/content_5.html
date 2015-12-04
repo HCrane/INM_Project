@@ -17,26 +17,49 @@
       <li><a href="../index.html" title="Introduction to Java">Java</a></li>
       <li><a href="content_1.html" title="Platform Indipendance">Platform Independence</a>
       	<ul>
-        	<li><a href="content_1.html#indipendance">Platform Independance</a></li>
+        	<li><a href="content_1.html#independance">Platform Independance</a></li>
         	<li><a href="content_1.html#how">How?</a> </li>
         	<li><a href="content_1.html#virtual">Java Virtual</a></li>
       	</ul>
       </li>
-      <li><a href="content_2.html" title="Collections">Collections</a></li>
-      <li><a href="content_3.html" title="Facelets">Facelets</a></li>
-      <li><a href="content_4.html" title="Basic Datatypes">Basic Datatypes</a></li>
-      <li><a href="content_5.html" title="Multithreading">	Multithreading</a></li>
+      <li><a href="content_2.html" title="Collections">Collections</a>
+      	<ul>
+        	<li><a href="content_2.html#collections">Collections</a></li>
+            <li><a href="content_2.html#example">Example</a></li>
+            <li><a href="content_2.html#summary">Summary</a></li>
+        </ul>
+      </li>
+      <li><a href="content_3.html" title="Facelets">Facelets</a>
+      <ul>
+        	<li><a href="content_3.html#facelets">Facelets</a></li>
+            <li><a href="content_3.html#lifecycle">LifeCycle</a></li>
+            <li><a href="content_3.html#expression">Expression Language</a></li>
+        </ul>
+      </li>
+      <li><a href="content_4.html" title="Basic Datatypes">Basic Datatypes</a>
+      <ul>
+        	<li><a href="content_4.html#basic">Basic Datatypes</a></li>
+            <li><a href="content_4.html#primitive">Primitive Data Types</a></li>
+        </ul>
+      </li>
+      <li><a href="content_5.html" title="Multithreading">	Multithreading</a>
+      <ul>
+        	<li><a href="content_5.html#what">What is a thread?</a></li>
+            <li><a href="content_5.html#fields">Fields of application</a></li>
+            <li><a href="content_5.html#usage">Usage of multithreading with Java</a></li>
+        </ul>
+      </li>
     </ul>
   </nav>
 
 <!--CONTENT AREA-->
 <section>
 <h1>Multithreading</h1>
-<h2>What is a thread?</h2>
+<h2 id="what">What is a thread?</h2>
 <p>
 A thread is a path for an execution of a programm. The programm is organized to run a multiple number of threads parallel. The big advance is, that a programm is not interrupted, when it gets for example information from another source. It is not to be mistaken with multitasking, where several applications run side by side. The big difference is, that multithreading allows you to run multiple parts of one programm run side by side.
 </p>
-<h2>Fields of application</h2>
+<h2 id="fields">Fields of application</h2>
 <ul>
 	<li>Internet applications
   	<ul>
@@ -48,7 +71,7 @@ A thread is a path for an execution of a programm. The programm is organized to 
 		<li>Several clients parallel</li>
 		</ul>
 </ul>
-<h2>Usage of multithreading with Java</h2>
+<h2 id="usage">Usage of multithreading with Java</h2>
 <p>
 Java supports multithreading. It offers predefined classes, which can be used by the programmer to create and change threads. There are two ways to create threads in Java.
 <ul>

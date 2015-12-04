@@ -17,15 +17,38 @@
       <li><a href="../index.html" title="Introduction to Java">Java</a></li>
       <li><a href="content_1.html" title="Platform Indipendance">Platform Independence</a>
       	<ul>
-        	<li><a href="content_1.html#indipendance">Platform Independance</a></li>
+        	<li><a href="content_1.html#independance">Platform Independance</a></li>
         	<li><a href="content_1.html#how">How?</a> </li>
         	<li><a href="content_1.html#virtual">Java Virtual</a></li>
       	</ul>
       </li>
-      <li><a href="content_2.html" title="Collections">Collections</a></li>
-      <li><a href="content_3.html" title="Facelets">Facelets</a></li>
-      <li><a href="content_4.html" title="Basic Datatypes">Basic Datatypes</a></li>
-      <li><a href="content_5.html" title="Multithreading">	Multithreading</a></li>
+      <li><a href="content_2.html" title="Collections">Collections</a>
+      	<ul>
+        	<li><a href="content_2.html#collections">Collections</a></li>
+            <li><a href="content_2.html#example">Example</a></li>
+            <li><a href="content_2.html#summary">Summary</a></li>
+        </ul>
+      </li>
+      <li><a href="content_3.html" title="Facelets">Facelets</a>
+      <ul>
+        	<li><a href="content_3.html#facelets">Facelets</a></li>
+            <li><a href="content_3.html#lifecycle">LifeCycle</a></li>
+            <li><a href="content_3.html#expression">Expression Language</a></li>
+        </ul>
+      </li>
+      <li><a href="content_4.html" title="Basic Datatypes">Basic Datatypes</a>
+      <ul>
+        	<li><a href="content_4.html#basic">Basic Datatypes</a></li>
+            <li><a href="content_4.html#primitive">Primitive Data Types</a></li>
+        </ul>
+      </li>
+      <li><a href="content_5.html" title="Multithreading">	Multithreading</a>
+      <ul>
+        	<li><a href="content_5.html#what">What is a thread?</a></li>
+            <li><a href="content_5.html#fields">Fields of application</a></li>
+            <li><a href="content_5.html#usage">Usage of multithreading with Java</a></li>
+        </ul>
+      </li>
     </ul>
   </nav>
 
@@ -33,7 +56,7 @@
 <section>
 	<h1> Platform Independence</h1>
     <hr />
-  	<h4>What is the meaning of platform independence?</h4>
+  	<h4 id="independance">What is the meaning of platform independence?</h4>
   		<p>Platform independent, cross-platform or multi-platform in computing means
   		   that you can run code with little or no modification on multiple platforms.</p>
   		<p>Platform Independent software can be divided into two types:</p>
@@ -42,7 +65,7 @@
   		  <li>The other one can be directly run on any platform without special preparation</li>
   		</ul>
 
-	<h4>How is Java platform independent?</h4>
+	<h4 id="how">How is Java platform independent?</h4>
 		<p>Java has a virtual machine the so-called JVM short for Java Virtual Machine.<br> <br>
 			What happens in case of Java is that the JVM once installed on any platform
 			like windows or OS X can run the java code without any alteration.<br>
@@ -56,7 +79,7 @@
 			so once you've developed your software in Java you can run it on any of these platforms.<br>
 			This is the primary reason why Java is much in use even today.</p>
 
-	<h4>Java Virtual Machine</h4>
+	<h4 id="virtual">Java Virtual Machine</h4>
 		<p>The JVM itself needs specific versions for each platform to take account of different native instruction codes and machine capabilities (so you can't run a Windows JVM on Linux and vice Versa).</p>
 
 
