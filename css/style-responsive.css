@@ -261,6 +261,10 @@ nav ul li ul li a:hover{
     background-color:#39F;
   }
 
+  section img{
+    width:100%;
+    height:auto;
+  }
 
   section table	  {
                     border: 0.0625em solid black;
